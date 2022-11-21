@@ -1,5 +1,9 @@
 // Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team. Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 
+// DOM
+const output = document.getElementById("output");
+
+// Object
 const membriTeam = [
     {
         "nome" : "Wayne Barnett",
@@ -34,13 +38,13 @@ const membriTeam = [
     {
         "nome" : "Barbara Ramos",
         "ruolo" : "Graphic Designer",
-        "foto" : "barbara-ramos-graphic-designer.jpg"
+        "foto" : "img/barbara-ramos-graphic-designer.jpg"
     }
 ];
 
 
 for (let i = 0; i < membriTeam.length; i++){
     for (key in membriTeam[i]){
-        console.log(key, membriTeam[i][key]);
+        output.innerHTML += `<li>${key} ${membriTeam[i][key]}</li>`;
     }
-}
+};
