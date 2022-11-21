@@ -2,6 +2,11 @@
 
 // DOM
 const output = document.getElementById("output");
+const cardImg = document.getElementsByClassName("img");
+const cardNome = document.getElementsByClassName("nome");
+const cardRuolo = document.getElementsByClassName("ruolo");
+
+// Object
 const membriTeam = [
     {
         "nome" : "Wayne Barnett",
@@ -41,8 +46,8 @@ const membriTeam = [
 ];
 
 
-for (let i = 0; i < membriTeam.length; i++){
-    output.innerHTML += `<li>${membriTeam[i].nome}</li>`;
-    output.innerHTML += `<li>${membriTeam[i].ruolo}</li>`;
-    output.innerHTML += `<img src="${membriTeam[i].foto}">`
+for (let i = 0; i < membriTeam.length; i++){ 
+    cardImg[i].innerHTML = `<img src="${membriTeam[i].foto}">`;
+    cardNome[i].innerHTML = `<div>${membriTeam[i].nome}</div>`;
+    cardRuolo[i].innerHTML = `<div>${membriTeam[i].ruolo}</div>`;
 }
