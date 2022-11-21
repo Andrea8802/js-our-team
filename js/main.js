@@ -1,9 +1,6 @@
 // Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team. Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 
-// DOM
-const output = document.getElementById("output");
-
-// Object
+// Object Team
 const membriTeam = [
     {
         "nome" : "Wayne Barnett",
@@ -43,8 +40,9 @@ const membriTeam = [
 ];
 
 
+// Ciclo for per stampare elementi
 for (let i = 0; i < membriTeam.length; i++){
     for (key in membriTeam[i]){
-        output.innerHTML += `<li>${key} ${membriTeam[i][key]}</li>`;
+        document.getElementById("output").innerHTML += `<li>${key} ${membriTeam[i][key]}</li>`;
     }
 }

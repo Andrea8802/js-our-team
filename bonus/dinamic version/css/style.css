@@ -1,0 +1,72 @@
+/* General Rules */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Source Serif Pro', serif;
+}
+
+/* Header Rules */
+header{
+    height: 100px;
+    text-align: center;
+    width: 50%;
+    margin: 50px auto;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header > h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Main Rules */
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 80px;
+    margin-bottom: 100px;
+}
+
+.card div{
+    text-align: center;
+    color: gray;
+
+}
+
+.img > img{
+    width: 100%;
+    cursor: pointer;
+}   
+    
+    .img > img:hover{
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+    }
+
+.nome{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+    display: i;
+}
+
+    .nome:hover{
+        text-decoration: underline;
+    }
+
+.ruolo{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+    .ruolo:hover{
+        text-decoration: underline;
+    }
