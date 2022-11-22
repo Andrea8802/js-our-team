@@ -45,7 +45,7 @@ const container = document.getElementById("container");
 // Creazione row
 const row = document.createElement("div");
 row.classList.add("row");
-container.append(row)
+container.append(row);
 
 // Ciclo for per creare cards
 for (let i = 0; i < membriTeam.length; i++){
@@ -69,11 +69,9 @@ for (let i = 0; i < membriTeam.length; i++){
     let cardRuolo = document.createElement("div");
     cardRuolo.classList.add("ruolo");
     card.append(cardRuolo);
-}
 
-// Ciclo for per stampare gli elementi
-for (let i = 0; i < membriTeam.length; i++){ 
+    // Statampare elementi
     document.getElementsByClassName("img")[i].innerHTML = `<img src="${membriTeam[i].foto}">`;
     document.getElementsByClassName("nome")[i].innerHTML = membriTeam[i].nome;
     document.getElementsByClassName("ruolo")[i].innerHTML = membriTeam[i].ruolo;
-}
+};
